@@ -7,6 +7,23 @@ header {
     box-shadow: 5px 5px 5px 5px #141517;
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#logo {
+    border-radius: 5em;
+}
+
+#logo:hover {
+    animation: rotate 2s linear infinite;
+}
+
 nav {
     text-align: right;
 }
@@ -15,7 +32,7 @@ a {
     display: inline-flex;
     align-items: center;
     color: #FFFFFF;
-    background-color: #947995;
+    background-color: transparent;
     font-size: 20px;
     font-family: "Fira Code", Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -75,7 +92,7 @@ a:hover {
     display: inline-block;
     background-color: #D0878B;
     padding: 18px 20px;
-    box-shadow: inset 0 0 0 0 #fff;
+    box-shadow: inset 0 0 0 0 transparent;
     border-radius: 5em;
     margin-right: 0px;
     transition: color .3s ease-in-out, box-shadow .5s ease-in-out, transform 200ms linear;
@@ -90,19 +107,3 @@ a:hover {
     
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-#logo {
-    border-radius: 5em;
-}
-
-#logo:hover {
-    animation: rotate 5s linear infinite;
-}
