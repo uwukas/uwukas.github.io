@@ -90,10 +90,19 @@ a:hover {
     
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 #logo {
     border-radius: 5em;
 }
 
 #logo:hover {
-    transform: rotate(0.9turn);
+    animation: rotate 5s linear infinite;
 }
