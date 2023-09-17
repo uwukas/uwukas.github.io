@@ -1,0 +1,17 @@
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    border-radius: 5em;
+}
+
+.logo:hover {
+    animation: rotate 2s linear infinite;
+}
