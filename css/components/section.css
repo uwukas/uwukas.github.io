@@ -4,3 +4,13 @@
     padding-bottom: 100px;
     border-bottom: 10px solid #5B3C91 ;
 }
+
+.section .main-title {
+    margin-bottom: 60px;
+}
+
+.section.-second {
+    background-color: #5A5698;
+    border-bottom: 10px solid #000;
+}
+
